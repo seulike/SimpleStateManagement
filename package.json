@@ -1,0 +1,35 @@
+{
+  "name": "mobx-s",
+  "version": "1.0.0",
+  "description": "a very simple version of StateManagement",
+  "main": "lib",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./src --cache --fix --ignore-pattern .gitignore",
+    "babel": "babel src -d lib",
+    "build": "yarn lint && babel src -d lib && babel my.js -o my.min.js"
+  },
+  "keywords": [
+    "mobx"
+  ],
+  "author": "like",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-import": "^2.8.0",
+    "flow-bin": "^0.64.0"
+  },
+  "dependencies": {
+    "babel-plugin-proxy": "^1.1.0",
+    "rx": "^4.1.0"
+  }
+}
